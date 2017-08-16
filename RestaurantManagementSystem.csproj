@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16451590-D5F9-457E-95A2-F46F204A2976}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RestaurantManagementSystem</RootNamespace>
+    <AssemblyName>RestaurantManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connector.cs" />
+    <Compile Include="DAO\EmployeeDAO.cs" />
+    <Compile Include="DTO\EmployeeDTO.cs" />
+    <Compile Include="DAO\FoodDAO.cs" />
+    <Compile Include="DTO\FoodDTO.cs" />
+    <Compile Include="DAO\FoodSellDAO.cs" />
+    <Compile Include="DTO\FoodSellDTO.cs" />
+    <Compile Include="Manager\FormBillManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormBillManagement.Designer.cs">
+      <DependentUpon>FormBillManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormCost.Designer.cs">
+      <DependentUpon>FormCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\FormEmployeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\FormEmployeeLogin.Designer.cs">
+      <DependentUpon>FormEmployeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormSell.Designer.cs">
+      <DependentUpon>FormSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormProfit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormProfit.Designer.cs">
+      <DependentUpon>FormProfit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormEmployeeManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormEmployeeManagement.Designer.cs">
+      <DependentUpon>FormEmployeeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\FormEmpRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\FormEmpRegistration.Designer.cs">
+      <DependentUpon>FormEmpRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormFoodManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormFoodManagement.Designer.cs">
+      <DependentUpon>FormFoodManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormManagerHome.Designer.cs">
+      <DependentUpon>FormManagerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormManagerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormManagerLogin.Designer.cs">
+      <DependentUpon>FormManagerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\ProfitDAO.cs" />
+    <Compile Include="DTO\ProfitDTO.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DAO\RMS_DAO.cs" />
+    <Compile Include="DTO\RMS_DTO.cs" />
+    <Compile Include="RMSdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RMSdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Manager\FormBillManagement.resx">
+      <DependentUpon>FormBillManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormCost.resx">
+      <DependentUpon>FormCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\FormEmployeeLogin.resx">
+      <DependentUpon>FormEmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormSell.resx">
+      <DependentUpon>FormSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormProfit.resx">
+      <DependentUpon>FormProfit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormEmployeeManagement.resx">
+      <DependentUpon>FormEmployeeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\FormEmpRegistration.resx">
+      <DependentUpon>FormEmpRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormFoodManagement.resx">
+      <DependentUpon>FormFoodManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormManagerHome.resx">
+      <DependentUpon>FormManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormManagerLogin.resx">
+      <DependentUpon>FormManagerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RMSdbDataSet.xsc">
+      <DependentUpon>RMSdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RMSdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RMSdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RMSdbDataSet.xss">
+      <DependentUpon>RMSdbDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
